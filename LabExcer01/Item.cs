@@ -15,6 +15,8 @@ namespace LabExcer01
         public int Quantity { get; set; }
         public double Price { get; set; }
 
+        public bool IsAvailable { get; set; } 
+
         static List<Item> _items = new List<Item>();
 
         public void save()
