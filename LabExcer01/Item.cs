@@ -15,9 +15,17 @@ namespace LabExcer01
         public int Quantity { get; set; }
         public double Price { get; set; }
 
-        public bool IsAvailable { get; set; } 
+        public bool IsAvailable { get; set; }
 
         static List<Item> _items = new List<Item>();
+        public static Item findone(String name)
+        {
+            return _items.Find(item => item.Item_Name == name);
+        }
+
+        //public String Count {get;set;}
+        
+
 
         public void save()
         {
@@ -28,6 +36,8 @@ namespace LabExcer01
         {
             return _items;
         }
+
+       
 
     }
 

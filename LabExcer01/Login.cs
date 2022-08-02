@@ -23,6 +23,8 @@ namespace LabExcer01
             {
                 Visible = false;
                 Form1 form1 = new Form1("admin");
+                //main_page m = new main_page();
+                //m.MdiParent = this;
                 form1.Show();
             }
             else
@@ -32,7 +34,7 @@ namespace LabExcer01
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
 }
